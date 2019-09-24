@@ -1,1 +1,2 @@
-# MLIA-02-kNN.py
+# Machine_learning_in_action
+# Python 3.6
