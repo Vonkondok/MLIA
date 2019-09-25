@@ -160,19 +160,19 @@ def plot_data_set(file_name):
     """
     font = FontProperties(fname=r"c:\windows\fonts\simsun.ttc", size=14)
     data_mat = load_data_set(file_name)
-    n = len(data_mat)
-    xcord = []
+    n = len(data_mat)   #数据个数
+    xcord = []  #样本点列表初始化
     ycord = []
     for i in range(n):
         # ex00.txt、ex2.txt、exp2.txt数据集
-        xcord.append(data_mat[i][0])
+        xcord.append(data_mat[i][0])	#加入样本点
         ycord.append(data_mat[i][1])
         # ex0.txt数据集
         # xcord.append(data_mat[i][1])
         # ycord.append(data_mat[i][2])
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    ax.scatter(xcord, ycord, s=20, c='blue', alpha=0.5)
+    ax.scatter(xcord, ycord, s=20, c='blue', alpha=0.5)	#绘制样本点
     # plt.title('data_set')
     # plt.xlabel('X')
     ax_xlabel_text = ax.set_xlabel(u'骑自行车的速度', FontProperties=font)
